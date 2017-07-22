@@ -1,0 +1,32 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    ports:
+    - "80:80"
+    volumes:
+    - ./src/public:/usr/share/nginx/html
+    - ./src/storage/app/public:/usr/share/nginx/assets
+    - ./build/nginx.default.conf:/etc/nginx/conf.d/default.conf
+    links:
+    - php
+  php:
+    build: 
+      context: ./build/php
+    expose:
+    - "9000"
+    volumes:
+    - ./src/:/var/www/html
+    links:
+    - mysql
+  mysql: 
+    image: mysql
+    ports:
+    - "33061:3306"
+    volumes:
+    - data-mysql:/var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - ./build/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  data-mysql: {}
