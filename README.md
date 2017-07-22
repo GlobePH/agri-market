@@ -18,7 +18,7 @@ Horizontal rule:
 
 ---
 
-__bold__About:
+About__bold__:
 
   * apples
   * oranges
