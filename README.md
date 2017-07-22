@@ -1,4 +1,4 @@
-# agri-market
+# Agri-Market
 
 ### About:
 Agri-Market is an online platform providing software as a service with tolls and services for web and mobile.
@@ -20,11 +20,18 @@ Suppliers and consumers registered on Agri-Market get instant notification on th
 * FB API or Graph API
 
 ### Tech Stacks:
-docker, git, apis, node, reactnative, webpack, babel, vuejs,
-sass, mysql, javascript, php/laravel 
+PHP/Laravel
+Mysql
+VueJS
 
+Docker
+Git
 
-### Product Service:
+### Mobile 
+ReactNative
+Node
+
+### End Product Service:
 web, mobile
 
 ### Team:
