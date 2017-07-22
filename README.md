@@ -31,6 +31,9 @@ Git
 ReactNative
 Node
 
+### Future Stacks
+BigData, Machine Learning for predicting market trends and analytics
+
 ### End Product Service:
 web, mobile
 
